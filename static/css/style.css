@@ -19,41 +19,66 @@
       background-color: #f4f4f4;
     }
 
-    body {
-      display: flex;
-      flex-direction: column;
-    }
+body {
+    display: flex;
+    flex-direction: column;
+}
 
-    main {
-      flex: 1; /* prend tout l’espace restant */
-    }
-        .contact-container {
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .contact-container h1 {
-            color: #333;
-            margin-bottom: 20px;
-        }
-        .contact-info {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            font-size: 1.2em;
-            color: #555;
-        }
-        .contact-info i {
-            font-size: 1.5em;
-            color: #007bff;
-        }
-        .contact-info a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
+main {
+    flex: 1; /* prend tout l’espace restant */
+}
+.contact-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.contact-container h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+.contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.2em;
+    color: #555;
+}
+.contact-info i {
+    font-size: 1.5em;
+    color: #007bff;
+}
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.custom-padding {
+    padding: 16px; /* top-bottom 60px, left-right 30px */
+}
+
+/* Tablettes (≥ 768px) */
+@media (min-width: 768px) {
+  .custom-padding {
+    padding: 32px;
+  }
+}
+
+/* Desktop (≥ 992px) */
+@media (min-width: 992px) {
+  .custom-padding {
+    padding: 48px;
+  }
+}
+
+/* Grand écran (≥ 1200px) */
+@media (min-width: 1200px) {
+  .custom-padding {
+    padding: 64px 110px;
+  }
+}
